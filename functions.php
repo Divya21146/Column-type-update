@@ -13,4 +13,4 @@ function update_table_column_size() {
     }
 }
 
-add_action('init', 'update_irap_table');
+add_action('init', 'update_table_column_size');
