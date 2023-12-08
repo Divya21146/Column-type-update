@@ -4,7 +4,7 @@ function update_table_column_size() {
 
     $table_name = $wpdb->prefix . "table_name";  // replace with your table name
 
-    $result = $wpdb->query("ALTER TABLE $table_name MODIFY COLUMN column_name VARCHAR(2000);");  //replace with your column name
+    $result = $wpdb->query("ALTER TABLE $table_name MODIFY COLUMN column_name VARCHAR(2000);");  //replace with your column name and change the varchar size as much as you want.
 
     if ($result === false) {
         echo "Error: " . $wpdb->last_error;
